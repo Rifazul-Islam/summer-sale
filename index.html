@@ -13,6 +13,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
+
+	 <!--Font Awesome Kin it is a important link-->
+  <script src="https://kit.fontawesome.com/bd411087f6.js" crossorigin="anonymous"></script>
+
  <style>
     
     .font-work{ font-family: 'Work Sans', sans-serif; }
@@ -40,8 +44,78 @@
     
 </header>     
  
-   <main>
-      <h1> Hello </h1>
+   <main class="bg-[#F8F8F8]">
+   <!--Kitchenware section-->  
+   
+    <section class="pt-5 mb-11 container mx-auto ">
+      <h1 class="text-4xl font-semibold pt-3 pb-5 pl-3">Kitchenware</h1>
+       <!--card and right container-->
+       <div class="flex flex-col lg:flex-row ">
+        <!--Card parent-->
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mx-2">
+           <!-- Card 1-->
+           <div class="card bg-[#ffffff] shadow-xl border-2 border-black">
+            <figure class=" bg-slate-100 m-5 rounded-xl">
+              <img  src="/images/prod1.png" alt="Shoes" class=" p-8 " />
+            </figure>
+            <div class=" text-center ">
+             <!--Rating-->
+             <div>
+             <span><i class="fa-solid fa-star text-orange-400"></i></span>
+             <span><i class="fa-solid fa-star text-orange-400"></i></span>
+             <span><i class="fa-solid fa-star text-orange-400"></i></span>
+             <span><i class="fa-regular fa-star text-orange-400"></i></span>
+             <span><i class="fa-regular fa-star text-orange-400"></i></span>
+            </div>
+
+             <h2 class="text-2xl font-semibold">K. Accessories</h2>
+              <p>39.00 TK</p>
+           
+            </div>
+          </div>
+        
+
+            <!-- Card 2-->
+            <div class="card bg-base-100 shadow-xl border-2 border-black">
+              <figure class="px-10 pt-10">
+                <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Shoes!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions">
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          
+
+
+             <!-- Card 3-->
+             <div class="card bg-base-100 shadow-xl border-2 border-black">
+              <figure class="px-10 pt-10">
+                <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Shoes!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions">
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          
+        
+        </div>
+     
+
+        <div class="border-2 border-cyan-300 w-64">
+          <h1> The Price is text</h1>
+        </div>
+
+       </div>
+
+    </section>
   </main>
    
    <footer></footer>
