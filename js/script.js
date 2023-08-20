@@ -1,6 +1,5 @@
 
 
-
 let priceStorage = 0 ;
 
 function addToCard(element){
@@ -18,19 +17,43 @@ containerParent.appendChild(p);
 
 
 // Calculate 
- 
 const totalPrice = document.getElementById('total-price');
-const discountPrice = document.getElementById('discount-price')
-const totalPrices = document.getElementById('total')
+const discountButton = document.getElementById('btn-discounts');
 let priceConvert = parseFloat(price);
-  priceStorage = priceStorage + priceConvert ;
-  totalPrice.innerText = priceStorage;
+priceStorage = priceStorage + priceConvert ;
+totalPrice.innerText = priceStorage;
 
-const discountPrices = (priceStorage * 20) / 100 ;
-discountPrice.innerText = discountPrices.toFixed(2);
-  
 
-const totalPriceSubtra = priceStorage - discountPrices;
-totalPrices.innerText = totalPriceSubtra.toFixed(2)
+if( priceStorage >= 200 ){
+  discountButton.removeAttribute('disabled')
+                                          
+}else{
+  discountButton.setAttribute('disabled', true)
+ }
 
 }
+
+
+// OnClick Function 02
+
+ function getResult(){
+
+              const inputField = document.getElementById('input-field');
+              const inputFieldValue = inputField.value;
+              inputField.value = '';
+             
+              const discountPrice = document.getElementById('discount-price');
+              const totalPrices = document.getElementById('total')
+
+              if(inputFieldValue === 'SELL200'){
+              const discountPrices = (priceStorage * 20) / 100 ;
+              discountPrice.innerText = discountPrices.toFixed(2);
+                                                                                          
+              const totalPriceSubtra = priceStorage - discountPrices;
+             totalPrices.innerText = totalPriceSubtra.toFixed(2)
+           } else{
+              return false ;
+           }
+
+ }
+
