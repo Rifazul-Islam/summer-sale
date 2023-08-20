@@ -52,7 +52,9 @@ if( priceStorage >= 200 ){
  const inputField = document.getElementById('input-field');
  const inputFieldValue = inputField.value;
  inputField.value = '';
-             
+   if( inputFieldValue !== 'SELL200'){
+     alert('Please Provide Sir, Coupon Code !!!')
+   }          
  const discountPrice = document.getElementById('discount-price');
 const totalPrices = document.getElementById('total')
 
