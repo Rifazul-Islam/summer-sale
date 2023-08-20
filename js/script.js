@@ -11,7 +11,7 @@ const count = containerParent.childElementCount;
 
 const p = document.createElement('p');
 p.classList.add('font-semibold')
-p.classList.add('text-xl')
+p.classList.add('text-[15px]')
 p.innerHTML = `${count + 1+'.'} ${heading}`;
 containerParent.appendChild(p);
 
@@ -49,26 +49,24 @@ if( priceStorage >= 200 ){
 
  function getResult(){
 
-              const inputField = document.getElementById('input-field');
-              const inputFieldValue = inputField.value;
-              inputField.value = '';
+ const inputField = document.getElementById('input-field');
+ const inputFieldValue = inputField.value;
+ inputField.value = '';
              
-              const discountPrice = document.getElementById('discount-price');
-              const totalPrices = document.getElementById('total')
+ const discountPrice = document.getElementById('discount-price');
+const totalPrices = document.getElementById('total')
 
-              if(inputFieldValue === 'SELL200'){
-              const discountPrices = (priceStorage * 20) / 100 ;
-              discountPrice.innerText = discountPrices.toFixed(2);
+if(inputFieldValue === 'SELL200'){
+const discountPrices = (priceStorage * 20) / 100 ;
+discountPrice.innerText = discountPrices.toFixed(2);
                                                                                           
-              const totalPriceSubtra = priceStorage - discountPrices;
-             totalPrices.innerText = totalPriceSubtra.toFixed(2)
-           } else{
-              return false ;
-           }
+const totalPriceSubtra = priceStorage - discountPrices;
+totalPrices.innerText = totalPriceSubtra.toFixed(2)
+} else{
+return false ;
+}
 
  }
-
-
 
  document.getElementById('btn-make').addEventListener('click', function(){ 
 

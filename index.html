@@ -26,16 +26,16 @@
  <header class="bg-[#F9F6E2]">
   <!--Banner Section-->
    <section class="container mx-auto lg:h-[500px] flex flex-col lg:flex-row justify-center items-center gap-8"> 
-    <div class="pt-5">
+    <div class="pt-5 text-center">
       <h2 class="pb-9 text-center">---SALE FEVER---</h2>
-      <h1 class="text-3xl font-bold pb-10">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h1>
+      <h1 class="text-4xl font-bold pb-10">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h1>
       <p>Use Promo Code
         <button class="btn btn-sm btn-secondary ">SELL200</button>
       </p>
      
     </div>
 
-     <div class="">
+     <div class="text-center">
        <img class="h-[390px]" src="./images/Summer 1.png" alt="">
      </div>
  
@@ -132,6 +132,46 @@
             </p>
             </div>
 
+     <!-- staring-->
+     <div class=" bg-[#fff] shadow-xl mt-6 h-[310px] z-20 p-2 rounded-lg border-2">
+      <!--Parent Container-->
+      <div id="parent-container" class="py-1 ">
+ 
+    </div>
+   <div class="border-t-2  pt-1 ">
+    <p  class="font-semibold text-[15px]">Total price: <span id="total-price" class="text-slate-500">00</span><span class="text-slate-500">.00Tk</span></p>
+    <p class="font-semibold text-[15px]"> Discount : <span id="discount-price" class="text-slate-500">00.00</span><span class="text-slate-500">Tk</span></p>
+    <p class="pb-2 font-semibold text-[15px]">Total:<span id="total" class="text-slate-500">00.00</span><span class="text-slate-500">Tk</span></p>
+    
+
+  <p class="border-t-2 pb-1"> </p>
+   <!-- Open the modal using ID.showModal() method -->
+      <button onclick="my_modal_1.showModal()"  id="btn-make" class=" btn btn-secondary w-full   rounded-lg py-1 capitalize"disabled >Make Purchase</button>
+      <dialog id="my_modal_1" class=" mx-auto  w-96">
+
+<form method="dialog" class=" text-center p-4">
+<img src="./images/congo.png" alt="" class="mx-auto">
+<h2 class="font-extrabold text-3xl"> Congratulations</h2>
+<p class="text-center pt-2 text-slate-500"> Your Purchase the product </p>
+
+<div class="modal-action justify-center">
+<!-- if there is a button in form, it will close the modal -->
+
+<button  id="show-site" class="btn btn-secondary capitalize"> Go Home </button>
+</div>
+</form>
+</dialog>
+  
+         
+</div>
+    
+</div>
+
+<!-- Ending-->
+
+
+
+
             </div>
         </div>
     </section>
@@ -139,7 +179,7 @@
 
 <!--02 section-->
 
-    <section class="pt-5 mb-11 container mx-auto">
+    <section class="pt-5 mb-11 container mx-auto lg:mt-[-200px] z-10">
       <h1 class="text-4xl font-semibold mt-4 pb-5 pl-3">Sportswear</h1>
        <!--card and right container-->
        <div class="flex flex-col-reverse lg:flex-row ">
@@ -214,21 +254,21 @@
         </div>
      
 <!--right side-->
-        <div class="lg:w-64 lg:mt-[-200px] mb-4">
-          <div class=" bg-[#fff]   shadow-xl p-2 rounded-lg">
+<div class="lg:w-64  mb-4">
+<!-- <div class=" bg-[#fff]   shadow-xl p-2 rounded-lg"> -->
             <!--Parent Container-->
-          <div id="parent-container" class="py-8 ">
+          <!-- <div id="parent-container" class="py-8 ">
            
             </div>
              <div class="border-t-2  py-2 ">
               <p  class="font-semibold text-[18px]">Total price: <span id="total-price" class="text-slate-500">00</span><span class="text-slate-500">.00Tk</span></p>
               <p class="font-semibold text-[18px]"> Discount : <span id="discount-price" class="text-slate-500">00.00</span><span class="text-slate-500">Tk</span></p>
               <p class="pb-2 font-semibold text-[18px]">Total:<span id="total" class="text-slate-500">00.00</span><span class="text-slate-500">Tk</span></p>
-              
+               -->
         
             
              <!-- Open the modal using ID.showModal() method -->
-                <button onclick="my_modal_1.showModal()"  id="btn-make" class=" btn btn-secondary w-full   rounded-lg py-1 "disabled >Make Purchase</button>
+                <!-- <button onclick="my_modal_1.showModal()"  id="btn-make" class=" btn btn-secondary w-full   rounded-lg py-1 "disabled >Make Purchase</button>
                 <dialog id="my_modal_1" class=" mx-auto  w-96">
 
           <form method="dialog" class=" text-center p-4">
@@ -239,14 +279,14 @@
 <div class="modal-action justify-center">
   <!-- if there is a button in form, it will close the modal -->
   
-  <button  id="show-site" class="btn btn-secondary capitalize"> Go Home </button>
+  <!-- <button  id="show-site" class="btn btn-secondary capitalize"> Go Home </button>
 </div>
 </form>
 </dialog>
-            
+             -->
                    
 </div>
-             
+              
 </div>
  </div>
  </div>
