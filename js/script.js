@@ -19,11 +19,22 @@ containerParent.appendChild(p);
 // Calculate 
 const totalPrice = document.getElementById('total-price');
 const discountButton = document.getElementById('btn-discounts');
+const makePurchase = document.getElementById('btn-make')
 let priceConvert = parseFloat(price);
 priceStorage = priceStorage + priceConvert ;
 totalPrice.innerText = priceStorage;
 
 
+
+if( makePurchase >=  0){
+makePurchase.setAttribute('disabled', true)            
+}
+else{
+ makePurchase.removeAttribute('disabled')        
+}
+
+
+// Apply Button condition 
 if( priceStorage >= 200 ){
   discountButton.removeAttribute('disabled')
                                           
@@ -57,3 +68,17 @@ if( priceStorage >= 200 ){
 
  }
 
+
+
+ document.getElementById('btn-make').addEventListener('click', function(){ 
+
+
+ })
+
+
+
+ document.getElementById('show-site').addEventListener('click', function(){
+   location.href = "index.html";
+ })
+
+ 
