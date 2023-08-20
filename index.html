@@ -22,10 +22,10 @@
     .font-work{ font-family: 'Work Sans', sans-serif; }
  </style>
 </head>
-<body class=" font-work">
- <header>
+<body class="font-work ">
+ <header class="bg-[#F9F6E2]">
   <!--Banner Section-->
-   <section class=" lg:h-[500px] flex flex-col lg:flex-row justify-center items-center border-2  bg-[#F9F6E2] gap-8"> 
+   <section class="container mx-auto lg:h-[500px] flex flex-col lg:flex-row justify-center items-center gap-8"> 
     <div class="pt-5">
       <h2 class="pb-9 text-center">---SALE FEVER---</h2>
       <h1 class="text-3xl font-bold pb-10">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h1>
@@ -36,7 +36,7 @@
     </div>
 
      <div class="">
-       <img class="h-96" src="./images/Summer 1.png" alt="">
+       <img class="h-[390px]" src="./images/Summer 1.png" alt="">
      </div>
  
 
@@ -44,19 +44,19 @@
     
 </header>     
  
-   <main class="bg-[#F8F8F8]">
+   <main class="bg-[#F8F8F8]  mx-auto lg:px-[240px]">
    <!--Kitchenware section-->  
    
-    <section class="pt-5  container mx-auto ">
+    <section class="pt-8 container mx-auto">
       <h1 class="text-4xl font-semibold pt-3 pb-5 pl-3">Kitchenware</h1>
        <!--card and right container-->
        <div class="flex flex-col lg:flex-row ">
         <!--Card parent-->
-        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mx-2">
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 px-3 ">
            <!-- Card 1-->
-           <div onclick="addToCard(this)"  class="card bg-[#ffffff] cursor-pointer pb-3 h-72 shadow-xl">
+           <div onclick="addToCard(this)"  class="card  bg-[#ffffff] cursor-pointer pb-3 lg:h-64 h-72 shadow-xl">
             <figure class=" bg-slate-100 m-5 rounded-xl">
-              <img  src="./images/prod1.png" alt="Shoes" class=" p-8 " />
+              <img  src="./images/prod1.png" alt="Shoes" class="  p-8 " />
             </figure>
             <div class="text-center parent">
              <!--Rating-->
@@ -75,9 +75,9 @@
         
 
             <!-- Card 2-->
-           <div onclick="addToCard(this)" class="card bg-[#ffffff] cursor-pointer h-72 pb-3 shadow-xl">
+           <div onclick="addToCard(this)" class="card bg-[#ffffff] cursor-pointer lg:h-64 h-72 pb-3 shadow-xl">
             <figure class=" bg-slate-100 m-5 rounded-xl">
-              <img  src="./images/prod2.png" alt="Shoes" class=" p-8 " />
+              <img  src="./images/prod2.png" alt="Shoes" class="p-8 " />
             </figure>
             <div class=" text-center">
              <!--Rating-->
@@ -97,7 +97,7 @@
 
 
              <!-- Card 3-->
-             <div onclick="addToCard(this)" class="card  bg-[#ffffff] cursor-pointer  h-72 pb-3 shadow-xl mb-5 ">
+             <div onclick="addToCard(this)" class="card  bg-[#ffffff] cursor-pointer lg:h-64 h-72 pb-3 shadow-xl mb-5 ">
               <figure class=" bg-slate-100 m-5 rounded-xl">
                 <img  src="./images/prod3.png" alt="Shoes" class="p-8" />
               </figure>
@@ -147,9 +147,9 @@
         <!--Card parent-->
         <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mx-2">
            <!-- Card 1-->
-           <div onclick="addToCard(this)" class="card bg-[#ffffff] pb-3 h-72 shadow-xl">
+           <div onclick="addToCard(this)" class="card bg-[#ffffff] pb-3 lg:h-64 h-72 shadow-xl">
             <figure class=" bg-slate-100 m-5 rounded-xl">
-              <img  src="./images/prod4.png" alt="Shoes" class=" p-8 " />
+              <img  src="./images/prod4.png" alt="Shoes" class="p-8 " />
             </figure>
             <div class=" text-center ">
              <!--Rating-->
@@ -168,7 +168,7 @@
         
 
             <!-- Card 2-->
-           <div onclick="addToCard(this)" class="card bg-[#ffffff] h-72 pb-3 shadow-xl">
+           <div onclick="addToCard(this)" class="card bg-[#ffffff] lg:h-64 h-72 pb-3 shadow-xl">
             <figure class=" bg-slate-100 m-5 rounded-xl">
               <img  src="./images/prod5.png" alt="Shoes" class=" p-8 " />
             </figure>
@@ -190,7 +190,7 @@
 
 
              <!-- Card 3-->
-             <div onclick="addToCard(this)" class="card bg-[#ffffff]  h-72 pb-3 shadow-xl">
+             <div onclick="addToCard(this)" class="card bg-[#ffffff]  lg:h-64 h-72 pb-3 shadow-xl">
               <figure class=" bg-slate-100 m-5 rounded-xl">
                 <img  src="./images/prod6.png" alt="Shoes" class=" p-8 " />
               </figure>
@@ -214,13 +214,13 @@
         </div>
      
 <!--right side-->
-        <div class="lg:w-64 lg:mt-[-150px]">
-          <div class=" bg-[#fff]   shadow-xl pl-3  rounded-lg">
+        <div class="lg:w-64 lg:mt-[-200px] mb-4">
+          <div class=" bg-[#fff]   shadow-xl p-2 rounded-lg">
             <!--Parent Container-->
-          <div id="parent-container" class="py-3">
+          <div id="parent-container" class="py-8 ">
            
             </div>
-             <div class="border-t-2 pb-3 pt-3">
+             <div class="border-t-2  py-2 ">
               <p  class="font-semibold text-[18px]">Total price: <span id="total-price" class="text-slate-500">00</span><span class="text-slate-500">.00Tk</span></p>
               <p class="font-semibold text-[18px]"> Discount : <span id="discount-price" class="text-slate-500">00.00</span><span class="text-slate-500">Tk</span></p>
               <p class="pb-2 font-semibold text-[18px]">Total:<span id="total" class="text-slate-500">00.00</span><span class="text-slate-500">Tk</span></p>
@@ -231,10 +231,10 @@
                 <button onclick="my_modal_1.showModal()"  id="btn-make" class=" btn btn-secondary w-full   rounded-lg py-1 "disabled >Make Purchase</button>
                 <dialog id="my_modal_1" class=" mx-auto  w-96">
 
-<form method="dialog" class=" text-center p-4">
-<img src="./images/congo.png" alt="" class="mx-auto">
-<h2 class="font-extrabold text-3xl"> Congratulations</h2>
-<p class="text-center pt-2 text-slate-500"> Your Purchase the product </p>
+          <form method="dialog" class=" text-center p-4">
+         <img src="./images/congo.png" alt="" class="mx-auto">
+        <h2 class="font-extrabold text-3xl"> Congratulations</h2>
+    <p class="text-center pt-2 text-slate-500"> Your Purchase the product </p>
 
 <div class="modal-action justify-center">
   <!-- if there is a button in form, it will close the modal -->
@@ -242,16 +242,105 @@
   <button  id="show-site" class="btn btn-secondary capitalize"> Go Home </button>
 </div>
 </form>
-                 </dialog>
+</dialog>
             
                    
-           </div>
+</div>
              
-         </div>
+</div>
+ </div>
+ </div>
 
-        </div>
-        </div>
+ </section>
 
+
+
+
+    <!--Section 03-->
+    <section class="container mx-auto ">
+      <h1 class="text-4xl font-semibold pt-3 pb-5 pl-3">Furniture</h1>
+       <!--card and right container-->
+       <div class="flex flex-col lg:flex-row ">
+        <!--Card parent-->
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 px-3 ">
+           <!-- Card 1-->
+           <div onclick="addToCard(this)" class="card bg-[#ffffff] cursor-pointer lg:h-64 h-72 pb-3 shadow-xl">
+            <figure class=" bg-slate-100 m-5 rounded-xl">
+              <img  src="./images/prod7.png" alt="Shoes" class=" p-8 " />
+            </figure>
+            <div class=" text-center">
+             <!--Rating-->
+              <div>
+                <span><i class="fa-solid fa-star text-orange-400"></i></span>
+                <span><i class="fa-solid fa-star text-orange-400"></i></span>
+                <span><i class="fa-solid fa-star text-orange-400"></i></span>
+                <span><i class="fa-solid fa-star text-orange-400"></i></span>
+               <span><i class="fa-regular fa-star text-orange-400"></i></span>
+              </div>
+            
+
+             <h2 class="font-semibold heading">B. Accessories</h2>
+              <p><span>185</span>.00 TK</p>
+           
+            </div>
+          </div>
+          
+        
+
+            <!-- Card 2-->
+           <div onclick="addToCard(this)" class="card bg-[#ffffff] cursor-pointer lg:h-64 h-72 pb-3 shadow-xl">
+            <figure class=" bg-slate-100 m-5 rounded-xl">
+              <img  src="./images/prod8.png" alt="Shoes" class=" p-8 " />
+            </figure>
+            <div class=" text-center">
+             <!--Rating-->
+             <div>
+              <span><i class="fa-solid fa-star text-orange-400"></i></span>
+              <span><i class="fa-solid fa-star text-orange-400"></i></span>
+              <span><i class="fa-solid fa-star text-orange-400"></i></span>
+              <span><i class="fa-solid fa-star text-orange-400"></i></span>
+              <span><i class="fa-solid fa-star text-orange-400"></i></span>
+            
+            </div>
+             <h2 class="font-semibold heading">Children play</h2>
+              <p><span>299</span>.00 TK</p>
+           
+            </div>
+          </div>
+          
+
+
+             <!-- Card 3-->
+             <div onclick="addToCard(this)" class="card  bg-[#ffffff] cursor-pointer  lg:h-64 h-72 pb-3 shadow-xl mb-5 ">
+              <figure class=" bg-slate-100 m-5 rounded-xl">
+                <img  src="./images/prod9.png" alt="Shoes" class="p-8" />
+              </figure>
+              <div class=" text-center parent">
+               <!--Rating-->
+               <div>
+               <span><i class="fa-solid fa-star text-orange-400"></i></span>
+               <span><i class="fa-solid fa-star text-orange-400"></i></span>
+               <span><i class="fa-solid fa-star text-orange-400"></i></span>
+               <span><i class="fa-solid fa-star text-orange-400"></i></span>
+               <span><i class="fa-solid fa-star text-orange-400"></i></span>
+               
+               
+              </div>
+               <h2 class="font-semibold heading">Flexible Sofa</h2>
+                <p><span>339</span>.00 TK</p>
+             
+              </div>
+            </div>
+          
+        
+        </div>
+     
+
+        <div class=" lg:w-64">
+           
+
+            </div>
+        </div>
     </section>
 
   </main>
