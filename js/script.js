@@ -19,12 +19,18 @@ containerParent.appendChild(p);
 
 // Calculate 
  
- const totalPrice = document.getElementById('total-price');
-
+const totalPrice = document.getElementById('total-price');
+const discountPrice = document.getElementById('discount-price')
+const totalPrices = document.getElementById('total')
 let priceConvert = parseFloat(price);
   priceStorage = priceStorage + priceConvert ;
-  totalPrice.innerText = priceStorage
+  totalPrice.innerText = priceStorage;
+
+const discountPrices = (priceStorage * 20) / 100 ;
+discountPrice.innerText = discountPrices.toFixed(2);
   
 
+const totalPriceSubtra = priceStorage - discountPrices;
+totalPrices.innerText = totalPriceSubtra.toFixed(2)
 
 }
